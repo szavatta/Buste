@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+	<appSettings>
+		<add key="DirDatabase" value="C:\VSSProgetti\Buste\Buste\bin\Debug"/>
+	</appSettings>
+</configuration>

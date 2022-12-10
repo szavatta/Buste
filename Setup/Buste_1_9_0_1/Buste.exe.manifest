@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly manifestVersion="1.0" xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asmv1:assemblyIdentity name="Buste.exe" version="1.9.0.1" publicKeyToken="8e7b56e85a18c3f1" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Buste" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Buste.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet class="System.Security.PermissionSet" version="1" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="2.0.50727.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Buste.exe" size="57344">
+      <assemblyIdentity name="Buste" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>07fF8h69BKv2f3xo48W70v9+1II=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Buste.exe.config" size="180">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>GRWx8fM8hQPF7bIyyntaq5yHGi0=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=PASSEPARTOUT\stefano.zavatta" issuerKeyHash="350855dd60a45084d22ceb85966c28e8d90fb3f8" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>IMzJSnciWDb8FFEfTFcb+yEisGA=</DigestValue></Reference></SignedInfo><SignatureValue>ekLrQmm5UnZ8VyL7ZNiycirdtWEEFjsSGe4RCCSkZIeR9DvDNYAbkwvreI5K/2bLpo5o+u5mgUKmjYGCeOK4ia9nf82JFTkWPtCinSqevcaiae/wk7TnFqOG2dmmJfXmGeq8q1ayMKPeqToN1Ud/2/jT8JDaq14/Uit41s9Eg5s=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>y4YELe4mT4dTMcwttpreLVmmXL5lw8w1nbKaKu9o74yaDXK5iczI4d+H19wcjZclWQkVR50bJoLdbWu1DwT6rMR1Y8gkekJdOgb+uPteReWaqEyccKPl5rXEOqVVFsg0Q7/UaRPlgARoSBxPiZED/baBi/ng1DAJquszDo2+g3c=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="60b02221fb1b574c1f5114fc365822774ac9cc20" Description="" Url=""><as:assemblyIdentity name="Buste.exe" version="1.9.0.1" publicKeyToken="8e7b56e85a18c3f1" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=PASSEPARTOUT\stefano.zavatta</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>lMyTEVNe8TD8Gir5J0UB7b4ZBps=</DigestValue></Reference></SignedInfo><SignatureValue>KSVCl9V3t2PRsPSc214XoilcC4wErCSqsmmsMptDWF2iR9ocI17zB8nQQD//mtfgsZFYrHZQXCYTm9oG15LhAfa9tm4bqvQeajRwV3P7i2ylnCIGklkreEQEM11O7yy1IpzblV3cjqggEln9GuEeQxrBwHkQivTQ+oDbH5qekfs=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>y4YELe4mT4dTMcwttpreLVmmXL5lw8w1nbKaKu9o74yaDXK5iczI4d+H19wcjZclWQkVR50bJoLdbWu1DwT6rMR1Y8gkekJdOgb+uPteReWaqEyccKPl5rXEOqVVFsg0Q7/UaRPlgARoSBxPiZED/baBi/ng1DAJquszDo2+g3c=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIICATCCAW6gAwIBAgIQEN//H5DZRa9EPFrAWHFLITAJBgUrDgMCHQUAMEMxQTA/BgNVBAMeOABQAEEAUwBTAEUAUABBAFIAVABPAFUAVABcAHMAdABlAGYAYQBuAG8ALgB6AGEAdgBhAHQAdABhMB4XDTA4MTIwNDE1MzczMVoXDTA5MTIwNDIxMzczMVowQzFBMD8GA1UEAx44AFAAQQBTAFMARQBQAEEAUgBUAE8AVQBUAFwAcwB0AGUAZgBhAG4AbwAuAHoAYQB2AGEAdAB0AGEwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMuGBC3uJk+HUzHMLbaa3i1Zply+ZcPMNZ2ymirvaO+Mmg1yuYnMyOHfh9fcHI2XJVkJFUedGyaC3W1rtQ8E+qzEdWPIJHpCXToG/rj7XkXlmqhMnHCj5ea1xDqlVRbINEO/1GkT5YAEaEgcT4mRA/22gYv54NQwCarrMw6NvoN3AgMBAAEwCQYFKw4DAh0FAAOBgQB7c62sMOQ/dv4dBKc+xGsuVNJN/eRDsQfv4gutrsFZZKwFEkg0KOHs8zJulQ07wkAviRi5+t99j+cVoJZAdaIg5H1WLtURj1TkwP6zCKL23t/WEbpXT3Py2UosBvNxRz313YVFN5iH4FKTFuNvzmhgT8I9TkkI3ouliTJKXKLVzw==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

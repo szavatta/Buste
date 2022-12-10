@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E25D9017-5F9A-4218-B770-E55781EAD040}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Buste</RootNamespace>
+    <AssemblyName>Buste</AssemblyName>
+    <ManifestCertificateThumbprint>1AE9D4DF9C2B2BE72CE65F788964A22F1861429B</ManifestCertificateThumbprint>
+    <ManifestKeyFile>Buste_1_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <TargetZone>LocalIntranet</TargetZone>
+    <SignManifests>true</SignManifests>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <PublishUrl>C:\VSSProgetti\Buste\Setup\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.9.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ExcelLibrary">
+      <HintPath>..\..\DLLesterne\ExcelLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Access.cs" />
+    <Compile Include="Common.cs" />
+    <Compile Include="Buste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Buste.Designer.cs">
+      <DependentUpon>Buste.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmConteggiaArticolo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmConteggiaArticolo.Designer.cs">
+      <DependentUpon>fmConteggiaArticolo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmBusteNonUscite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmBusteNonUscite.Designer.cs">
+      <DependentUpon>fmBusteNonUscite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmAnalizzaBatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmAnalizzaBatch.Designer.cs">
+      <DependentUpon>fmAnalizzaBatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmAnalizzaBusta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmAnalizzaBusta.Designer.cs">
+      <DependentUpon>fmAnalizzaBusta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmProgress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmProgress.Designer.cs">
+      <DependentUpon>fmProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMonoprodotto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMonoprodotto.Designer.cs">
+      <DependentUpon>frmMonoprodotto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRipristinaGiorno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRipristinaGiorno.Designer.cs">
+      <DependentUpon>frmRipristinaGiorno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCaricaBusteMulti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCaricaBusteMulti.Designer.cs">
+      <DependentUpon>frmCaricaBusteMulti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Messaggio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Messaggio.Designer.cs">
+      <DependentUpon>Messaggio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNuovoArticolo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNuovoArticolo.Designer.cs">
+      <DependentUpon>frmNuovoArticolo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Buste.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Buste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmConteggiaArticolo.resx">
+      <DependentUpon>fmConteggiaArticolo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmBusteNonUscite.resx">
+      <DependentUpon>fmBusteNonUscite.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmAnalizzaBatch.resx">
+      <DependentUpon>fmAnalizzaBatch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmAnalizzaBusta.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>fmAnalizzaBusta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmProgress.resx">
+      <DependentUpon>fmProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMonoprodotto.resx">
+      <DependentUpon>frmMonoprodotto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRipristinaGiorno.resx">
+      <DependentUpon>frmRipristinaGiorno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCaricaBusteMulti.resx">
+      <DependentUpon>frmCaricaBusteMulti.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Messaggio.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Messaggio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNuovoArticolo.resx">
+      <DependentUpon>frmNuovoArticolo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Buste_1_TemporaryKey.pfx" />
+    <None Include="Buste_TemporaryKey.pfx" />
+    <BaseApplicationManifest Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
