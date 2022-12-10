@@ -1198,14 +1198,14 @@ namespace Buste
         {
             numMovimentoIn += 1;
             object[] objMov = new object[] { numMovimentoIn, codArticolo, descrArticolo, codBusta, idBatch, dataBusta.ToShortDateString(), qtaCodice, tipoOrdine, numProdotti };
-            dgInBuste.Rows.Add(objMov);
+            dgInBuste.Rows.Insert(0, objMov);
         }
 
         private void AggiungeDGResiBuste(string idBatch, string codArticolo, string descrArticolo, string codBusta, DateTime dataBusta, int qtaCodice)
         {
             numMovimentoReso += 1;
             object[] objMov = new object[] { numMovimentoReso, codArticolo, descrArticolo, codBusta, idBatch, dataBusta.ToShortDateString(), qtaCodice };
-            dgResiBuste.Rows.Add(objMov);
+            dgResiBuste.Rows.Insert(0, objMov);
         }
 
         private void btAzzeraTutto_Click(object sender, EventArgs e)

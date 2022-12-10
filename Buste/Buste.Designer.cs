@@ -157,8 +157,8 @@ namespace Buste
             this.leggiBusteInEntrataToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.totakiMonoprodottoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmRipristinaGiorno = new System.Windows.Forms.ToolStripMenuItem();
-            this.lblFornitore = new System.Windows.Forms.Label();
             this.caricaBusteMultiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lblFornitore = new System.Windows.Forms.Label();
             this.tab1.SuspendLayout();
             this.tabIn.SuspendLayout();
             this.gbIn1.SuspendLayout();
@@ -1526,6 +1526,13 @@ namespace Buste
             this.tsmRipristinaGiorno.Text = "Ripristina giorno";
             this.tsmRipristinaGiorno.Click += new System.EventHandler(this.tsmRipristinaGiorno_Click);
             // 
+            // caricaBusteMultiToolStripMenuItem
+            // 
+            this.caricaBusteMultiToolStripMenuItem.Name = "caricaBusteMultiToolStripMenuItem";
+            this.caricaBusteMultiToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
+            this.caricaBusteMultiToolStripMenuItem.Text = "Carica buste multi";
+            this.caricaBusteMultiToolStripMenuItem.Click += new System.EventHandler(this.caricaBusteMultiToolStripMenuItem_Click);
+            // 
             // lblFornitore
             // 
             this.lblFornitore.AutoSize = true;
@@ -1536,13 +1543,6 @@ namespace Buste
             this.lblFornitore.Size = new System.Drawing.Size(82, 20);
             this.lblFornitore.TabIndex = 17;
             this.lblFornitore.Text = "Fornitore";
-            // 
-            // caricaBusteMultiToolStripMenuItem
-            // 
-            this.caricaBusteMultiToolStripMenuItem.Name = "caricaBusteMultiToolStripMenuItem";
-            this.caricaBusteMultiToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
-            this.caricaBusteMultiToolStripMenuItem.Text = "Carica buste multi";
-            this.caricaBusteMultiToolStripMenuItem.Click += new System.EventHandler(this.caricaBusteMultiToolStripMenuItem_Click);
             // 
             // fmBuste
             // 
@@ -1557,7 +1557,7 @@ namespace Buste
             this.MainMenuStrip = this.menuBuste;
             this.Name = "fmBuste";
             this.RightToLeftLayout = true;
-            this.Text = " Buste v.12.1 del 24/08/2021";
+            this.Text = " Buste del 10/12/2022";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmBuste_FormClosing);
             this.Load += new System.EventHandler(this.frmBuste_Load);
             this.Resize += new System.EventHandler(this.frmBuste_Resize);
