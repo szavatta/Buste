@@ -254,6 +254,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="DLLEsterne\ExcelLibrary.dll" />
+    <Content Include="sounds\Conferma01.wav" />
+    <Content Include="sounds\Error01.wav" />
+    <Content Include="sounds\Ok01.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
