@@ -31,17 +31,28 @@ namespace Buste
 
         private void inizializzaDgBusteNonUscite()
         {
-            DataGridViewButtonColumn buttons = new DataGridViewButtonColumn();
-            buttons.HeaderText = "Vis";
-            buttons.UseColumnTextForButtonValue = true;
-            buttons.FlatStyle = FlatStyle.Standard;
-            buttons.CellTemplate.Style.BackColor = Color.Honeydew;
-            buttons.DisplayIndex = 0;
-            buttons.Width = 30;
+            DataGridViewButtonColumn button1 = new DataGridViewButtonColumn();
+            button1.Text = "?";
+            button1.ToolTipText = "Visualizza le entrate e uscite di questo articolo";
+            button1.UseColumnTextForButtonValue = true;
+            button1.FlatStyle = FlatStyle.Standard;
+            button1.CellTemplate.Style.BackColor = Color.Honeydew;
+            button1.DisplayIndex = 0;
+            button1.Width = 30;
+
+            DataGridViewButtonColumn button2 = new DataGridViewButtonColumn();
+            button2.Text = "+";
+            button2.ToolTipText = "Aggiunge negli articoli in uscita";
+            button2.UseColumnTextForButtonValue = true;
+            button2.FlatStyle = FlatStyle.Standard;
+            button2.CellTemplate.Style.BackColor = Color.Honeydew;
+            button2.DisplayIndex = 0;
+            button2.Width = 30;
 
             dgBusteNonUscite.Columns.Add("idBusta", "Busta");
             dgBusteNonUscite.Columns["idBusta"].Width = 80;
-            dgBusteNonUscite.Columns.Add(buttons);
+            dgBusteNonUscite.Columns.Add(button1);
+            dgBusteNonUscite.Columns.Add(button2);
             dgBusteNonUscite.Columns.Add("data", "Data");
             dgBusteNonUscite.Columns["data"].Width = 80;
             dgBusteNonUscite.Columns["data"].ValueType = typeof(DateTime);
@@ -80,7 +91,7 @@ namespace Buste
                 if (!(CBEscludiLettura.Checked && inlettura == "X" 
                     || CBAData.Checked && data > dtAData.Value))
                 {
-                    object[] objMov = new object[] { dr["idBusta"].ToString(), null, data, dr["idArticolo"].ToString(), dr["descrizione"].ToString(), qta, dr["idBatch"].ToString(), inlettura };
+                    object[] objMov = new object[] { dr["idBusta"].ToString(), null, null, data, dr["idArticolo"].ToString(), dr["descrizione"].ToString(), qta, dr["idBatch"].ToString(), inlettura };
                     dgBusteNonUscite.Rows.Add(objMov);
                 }
                 totQta += qta;
@@ -123,6 +134,19 @@ namespace Buste
                 fmBusta.frmBuste = frmBuste;
                 fmBusta.Tag = idBusta;
                 fmBusta.Show();
+            }
+            else if (e.ColumnIndex == 2)
+            {
+                var row = dgBusteNonUscite.Rows[e.RowIndex];
+                ((fmBuste)frmBuste).tbOutCodice.Text = row.Cells["idBusta"].Value.ToString();
+                ((fmBuste)frmBuste).btOutInserisce.PerformClick();
+
+                ((fmBuste)frmBuste).tbOutCodice.Text = row.Cells["idArticolo"].Value.ToString() + "*" + row.Cells["qta"].Value.ToString();
+                ((fmBuste)frmBuste).btOutInserisce.PerformClick();
+
+                this.Focus();
+
+
             }
         }
     }

@@ -1557,7 +1557,7 @@ namespace Buste
             this.MainMenuStrip = this.menuBuste;
             this.Name = "fmBuste";
             this.RightToLeftLayout = true;
-            this.Text = " Buste del 10/12/2022";
+            this.Text = " Buste del 28/11/2023";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmBuste_FormClosing);
             this.Load += new System.EventHandler(this.frmBuste_Load);
             this.Resize += new System.EventHandler(this.frmBuste_Resize);
@@ -1617,9 +1617,9 @@ namespace Buste
         private System.Windows.Forms.Button tbFine;
         private System.Windows.Forms.Label lblQtaOut;
         private System.Windows.Forms.Label lbl2;
-        private System.Windows.Forms.Button btOutInserisce;
+        public System.Windows.Forms.Button btOutInserisce;
         private System.Windows.Forms.Label lbl3;
-        private System.Windows.Forms.TextBox tbOutCodice;
+        public System.Windows.Forms.TextBox tbOutCodice;
         private System.Windows.Forms.Label lblArticoloOut;
         private System.Windows.Forms.Button btAzzeraTutto;
         private System.Windows.Forms.Button btAzzeraPaginaOut;
@@ -1643,7 +1643,7 @@ namespace Buste
         private System.Windows.Forms.TabPage tbInBuste;
         private System.Windows.Forms.DataGridView dgInBuste;
         private System.Windows.Forms.Button btInInserisce;
-        private System.Windows.Forms.TextBox tbInCodice;
+        public System.Windows.Forms.TextBox tbInCodice;
         private System.Windows.Forms.Button btInCaricaBuste;
         private System.Windows.Forms.Label lblInErrore;
         private System.Windows.Forms.Button btEliminaUltimo;
