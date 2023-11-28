@@ -46,6 +46,10 @@ namespace Buste
 
         private void frmBuste_Load(object sender, EventArgs e)
         {
+            var splash = new frmSplash();
+            splash.Show();
+
+
             boAccess = new Access();
             boCommon = new Common();
 
